@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!----Bootstrap 5.3 start---->
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <!----Bootstrap icon--->
+  <link rel="stylesheet" href="./bootstrap/icons/font/bootstrap-icons.css">
+  <!----Bootstrap 5.3 end---->
+
+  <!----Font start---->
+  <!----Font end---->
+
+  <!----Custom CSS start---->
+  <link rel="stylesheet" href="css/style.css">
+  <!----Custom CSS End---->
+  <title>Quran</title>
+</head>
+
+<body>
+  <nav class="navbar pbg1 fixed-top p-2">
+    <div class="container p-0">
+      <div>
+        <button class="navbar-toggler text-white  border-light shadow-none border-0" type="button"
+          data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <a class="navbar-brand text-white" href="index.html">Quarn</a>
+      </div>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header p-0">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <img src="./img/nav.jpg" class="img-fluid" alt="">
+          </h5>
+          <button type="button" class="btn-close nav-custom position-fixed" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-download"></i> আপডেট করুন</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-star-fill"></i> রেইটিং দিন</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-share-fill"></i> অ্যাপ শেয়ার করুন</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-person-vcard-fill"></i> যোগাযোগ করুন</a>
+            </li>
+            <hr>
+            <span class="navhed">আপনার জ্ঞাতার্তে...</span>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-star-fill"></i> রেইটিং দিন</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-share-fill"></i> অ্যাপ শেয়ার করুন</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-person-vcard-fill"></i> যোগাযোগ করুন</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a class="text-white" href="#"><i class="bi bi-clock-fill"></i></a>
+        <a class="btn text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+            class="bi bi-three-dots-vertical"></i></a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-space"></div>
+
+  <div id="arabicDate"></div>
+  <div id="englishDate"></div>
+  <div id="banglaDate"></div>
+
+  <section class="custom-card">
+    <div class="container">
+      <div class="row m-1">
+        <a href="page1.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width" alt="">
+            <div class="">
+              <h2 class="">কালেমা</h2>
+              <p class="mb-0 index-p">পাঁচ কালেমা বাংলা অর্থসহ </p>
+            </div>
+            </div>
+            <div class="align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        <a href="./pages/namaj.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">নামাজ</h2>
+              <p class="mb-0 index-p">সকল নামাজের বিবরণ</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        <a href="./pages/roja.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">রোজা</h2>
+              <p class="mb-0 index-p">সকল প্রকার রোজার বিবরণ</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        <a href="./pages/haj.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">হজ্জ</h2>
+              <p class="mb-0 index-p">হজ্জ ও ওমরাহ্ বিবরণ</p>
+            </div>
+            </div>
+            <div class="align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        <a href="./pages/jakat.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">যাকাত</h2>
+              <p class="mb-0 index-p">যাকাত ও সদকা আদায়ের নিয়ম</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        <a href="./pages/azan.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+              <img src="./img/quran.jpg" class="index-img-width " alt="">
+               <div class="">
+                  <h2 class="">আযান ও ইকামা</h2>
+                  <p class="mb-0 index-p">যাকাত ও সদকা আদায়ের নিয়ম</p>
+                </div>
+              </div>
+              <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <a href="./pages/pobitrota.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between ">
+            <div class="d-flex">
+              <img src="./img/quran.jpg" class="index-img-width " alt="">
+               <div class="">
+                 <h2 class="">পবিত্রতা</h2>
+                 <p class="mb-0 index-p">যাকাত ও সদকা আদায়ের নিয়ম</p>
+                </div>
+                </div>
+               
+               <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./pages/nafalnamaj.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">গুরুত্বপূর্ণ নফল নামাজ</h2>
+              <p class="mb-0 index-p">গুরুত্বপূর্ণ নফল নামাজ আদায়ের নিয়ম</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        
+  <a href="./pages/kajanamaj.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">কাযা নামাজের নিয়ম</h2>
+              <p class="mb-0 index-p">কাযা পড়ার নিয়ম</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+     <a href="./pages/eid.html" class="p-0 d-flex text-decoration-none text-white  col-12 mt-1">
+      <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+        <div class="d-flex">
+                  <img src="./img/quran.jpg" class="index-img-width " alt="">
+                  <div class="">
+                   <h2 class="">ঈদ </h2>
+                   <p class="mb-0 index-p">ঈদ ও ঈদের নামাজের নিয়ম </p>
+              </div>
+             </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+      </div>
+      </a>
+      <a href="./pages/qurbani.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">কুরবানি ও আকিকা</h2>
+              <p class="mb-0 index-p">কুরবানি ও আকিকা করার নিয়ম</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        <a href="./list-quran.html" class="p-0 text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">নামাজের প্রয়োজনীয় সূরা</h2>
+              <p class="mb-0 index-p">দরকারী কিছু ছোট সূরা</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        
+        
+        <a href="./pages/hadis.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">হাদিস </h2>
+              <p class="mb-0 index-p">প্রয়োজনীয়  কিছু হাদিস</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        <a href="./pages/dowa.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">দোয়া দরুদ</h2>
+              <p class="mb-0 index-p">প্রয়োজনীয় দোয়া দরুদ সমূহ</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        <a href="./99th-name.html" class="p-0 text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between ">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">আল্লাহর ৯৯ নাম</h2>
+              <p class="mb-0 index-p">আল্লাহর ৯৯ নাম ও ফজিলত </p>
+            </div>
+          </div>
+            <div class="align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        <a href="./pages/akaied.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">আকাইদ ও নৈতিক জীবন</h2>
+              <p class="mb-0 index-p">ইসলামিক জীবন বিধান</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./pages/akhlak.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width flex-fill" alt="">
+            <div class="">
+              <h2 class="">আখলাক বা চরিত্র</h2>
+              <p class="mb-0 index-p"> চরিত্র গঠন </p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        <a href="./pages/kabar.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">কবর জিয়ারত</h2>
+              <p class="mb-0 index-p">কবর জিয়ারত করার নিয়ম</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./pages/amal.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">আমল ও সায়্যিদুল ইস্তেগফার</h2>
+              <p class="mb-0 index-p">আমল ও সায়্যিদুল ইস্তেগফার</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./pages/amal-2.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width" alt="">
+            <div class="">
+              <h2 class="">বিভিন্ন আয়াতের আমল ও ফজীলত</h2>
+              <p class="mb-0 index-p">ছোাট আমল ও ফজীলত</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./pages/dafon-kafon.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between ">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">কাফন-দাফন</h2>
+              <p class="mb-0 index-p">কাফন-দাফন করার নিয়ম</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./pages/kobore-qustin.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">কবরে প্রশ্ন ও শান্তি</h2>
+              <p class="mb-0 index-p">কবরে প্রশ্ন ও শান্তি</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <a href="counter.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/counter.jpg" class=" index-img-width" alt="">
+            <div class="">
+              <h2 class="">তাসবিহ</h2>
+              <p class="mb-0 index-p">তাসবিহ পড়ুন এখান থেকে</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <a href="./islamic-name/index.html" class="p-0 text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">ইসলামিক নাম</h2>
+              <p class="mb-0 index-p">ছেলে ও মেয়েদের জন্য ইসলামিক নাম</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        <a href="https://qiblafinder.withgoogle.com/intl/en/finder/ar"
+        class="p-0 text-decoration-none text-white col-12 mt-1">
+        <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+          <div class="d-flex">
+          <img src="./img/compass.jpg" class="index-img-width " alt="">
+          <div class="">
+            <h2 class="">কাবা (কম্পাস)</h2>
+            <p class="mb-0 index-p">কেবলার দিক নির্ণয়....</p>
+          </div>
+          </div>
+          <div class=" align-items-center d-flex p-2">
+            <i class="bi bi-box-arrow-in-right"></i>
+          </div>
+        </div>
+      </a>
+
+
+
+        <a href="./pages/eid-e-meladunnabi.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex ali align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">ঈদ-ই-মিলাদুন্নবী</h2>
+              <p class="mb-0 index-p">ঈদ-ই-মিলাদুন্নবী বর্নণা</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./pages/islami-ukti.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">ইসলামিক উক্তি </h2>
+              <p class="mb-0 index-p">ছোট ইসলামিক উক্তি হাদিস</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./pages/al-quran.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">পবিত্র কুরআন</h2>
+              <p class="mb-0 index-p">পবিত্র কুরআন</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        <a href="./pages/alquran-fajilot.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex justify-content-between align-items-betwen">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">পবিত্র কুরআনের ফর্যীলত</h2>
+              <p class="mb-0 index-p">পবিত্র কুরআনের ফর্যীলত</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        <a href="./pages/adio-full-quran.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex ali justify-content-between align-items-betwen">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class=""> সম্পূর্ণ কুরআন অডিও</h2>
+              <p class="mb-0 index-p"> সম্পূর্ণ কুরআন অডিও</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./pages/islami-vedios.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">ইসলামি শিক্ষনীয় ভিডিও</h2>
+              <p class="mb-0 index-p">ইসলামি শিক্ষনীয় ভিডিও</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        <a href="./pages/nabiger-jiboni.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">হযরত মুহাম্মদ (সাঃ) এর জীবনী সংক্ষেপে
+              </h2>
+              <p class="mb-0 index-p">হযরত মুহাম্মদ (সাঃ) এর জীবনী সংক্ষেপে
+              </p></div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./pages/kholafayea-rashedin.html" class="p-0 d-flex text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex justify-content-between align-items-betwen"><div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">খোলাফায়ে রাশেদিনের জীবনাদর্শ
+              </h2>
+              <p class="mb-0 index-p">খোলাফায়ে রাশেদিনের জীবনাদর্শ
+              </p></div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+
+        
+        
+        
+        <a href="./pdf/index.html" class="p-0 text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex justify-content-between align-items-betwen">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">সম্পূর্ণ কোরআন</h2>
+              <p class="mb-0 index-p">হিফজুল কোরআন</p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./calender/index.html" class="p-0 text-decoration-none text-white col-12 mt-1">
+          <div class="col-12 rounded-2 pbg1 d-flex align-items-betwen justify-content-between">
+            <div class="d-flex">
+            <img src="./img/quran.jpg" class="index-img-width " alt="">
+            <div class="">
+              <h2 class="">ক্যালেন্ডার 
+              </h2>
+              <p class="mb-0 index-p">ক্যালেন্ডার আরবী বাংলা ইংরেজী
+              </p>
+            </div>
+            </div>
+            <div class=" align-items-center d-flex p-2">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+          </div>
+        </a>
+        
+      </div>
+    </div>
+    </div>
+  </section>
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

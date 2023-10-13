@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <style>
+        #pdfViewer {
+            position: relative;
+        }
+
+        .navigation {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>PDF Viewer</h1>
+    <div id="pdfViewer"></div>
+    <div class="navigation">
+        <button id="prevPageBtn">Previous Page</button>
+        <input type="number" id="pageNumInput" placeholder="Page Number">
+        <button id="goToPageBtn">Go to Page</button>
+        <button id="nextPageBtn">Next Page</button>
+    </div>
+    <script>
+        var pdfUrl = 'quran.pdf';
+        var pdfContainer = document.getElementById('pdfViewer');
+        var currentPage = 1;
+
+        function renderPage(pageNumber) {
+            pdfjsLib.getDocument(pdfUrl).promise.then(function (pdf) {
+                pdf.getPage(pageNumber).then(function (page) {
+                    var canvas = document.createElement('canvas');
+                    var context = canvas.getContext('2d');
+                    var viewport = page.getViewport({
+                        scale: 1.5
+                    });
+                    canvas.width = viewport.width;
+                    canvas.height = viewport.height;
+                    page.render({
+                        canvasContext: context,
+                        viewport: viewport
+                    });
+                    pdfContainer.innerHTML = '';
+                    pdfContainer.appendChild(canvas);
+                });
+            });
+        }
+
+        document.getElementById('prevPageBtn').addEventListener('click', function () {
+            if (currentPage > 1) {
+                currentPage--;
+                renderPage(currentPage);
+            }
+        });
+
+        document.getElementById('nextPageBtn').addEventListener('click', function () {
+            pdfjsLib.getDocument(pdfUrl).promise.then(function (pdf) {
+                if (currentPage < pdf.numPages) {
+                    currentPage++;
+                    renderPage(currentPage);
+                }
+            });
+        });
+
+        document.getElementById('goToPageBtn').addEventListener('click', function () {
+            var pageNumInput = document.getElementById('pageNumInput');
+            var pageNumber = parseInt(pageNumInput.value);
+            if (pageNumber >= 1 && pageNumber <= pdf.numPages) {
+                currentPage = pageNumber;
+                renderPage(currentPage);
+            } else {
+                alert('Invalid page number.');
+            }
+        });
+
+        // Initial render of the first page
+        renderPage(currentPage);
+    </script>
+</body>
+
+</html>
